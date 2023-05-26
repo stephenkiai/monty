@@ -37,6 +37,8 @@ instruction_t instructions[] = {
 	{"pint", opcode_pint},
 	{"pop", opcode_pop},
 	{"swap", opcode_swap},
+	{"nop", opcode_nop},
+	{"sub", opcode_sub},
 	{NULL, NULL}
 };
 

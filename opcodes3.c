@@ -35,3 +35,18 @@ void opcode_add(stack_t **stack, unsigned int line_number)
     (*stack)->next->n += (*stack)->n;
     opcode_pop(stack, line_number);
 }
+/**
+ * nop - Does nothing.
+ * @stack: Pointer to the pointer to the stack.
+ * @line_number: Line number of the instruction in the file.
+ *
+ * Description: This function does nothing and serves as a placeholder
+ * for the "nop" opcode. It is used when no operation is needed.
+ */
+void opcode_nop(stack_t **stack, unsigned int line_number)
+{
+    (void)stack;
+    (void)line_number;
+    /* No operation needed */
+}
+
